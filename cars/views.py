@@ -13,6 +13,6 @@ class CarsListView(generics.ListCreateAPIView):
     queryset = Car.objects.all()
 
 
-class CarDetailsView(generics.RetrieveDestroyAPIView):
+class CarDetailsView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CarsSerializer
     queryset = Car.objects.all()
